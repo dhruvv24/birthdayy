@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f7d9d9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        .message {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+        .surprise-container {
+            margin: 20px;
+            display: none;
+        }
+        .surprise-button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .surprise-button:hover {
+            background-color: #e55b50;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+        }
+    </style>
+    <script>
+        function revealSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, Betu </h1>
+    </header>
+
+    <div class="message">
+        <p>Today is a special day, just like you! You light up my life in every way, and I hope this day brings you as much joy as you bring to everyone around you.</p>
+    </div>
+
+    <button class="surprise-button" onclick="revealSurprise()">Click for a Surprise!</button>
+
+    <div id="surprise" class="surprise-container">
+        <p>Surprise! Here's a little collection of our sweetest memories:</p>
+        <img src="photo1.jpg" alt="Memory 1">
+        <img src="photo2.jpg" alt="Memory 2">
+        <img src="photo3.jpg" alt="Memory 3">
+    </div>
+     <footer>
+        <p>Created with love, just for you!</p>
+    </footer>
+</body>
+</html>
